@@ -11,12 +11,36 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Front\FrontController@showFront');
+
+/*
+ * 
+ * Route::get('/', function () {
+ *  return view('welcome');
+ * });
+ * 
+ */
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
+/*
+ *
+ * Route::get('/contact', 'Front\ContactController@showContact');
+ * 
+ * 
+ * 
+ * Route::get('/dashboard', 'Back\DashboardController@showDashboard');
+ * 
+ * Route::get('/blankpage', 'Back\BlankpageController@showBlankpage');
+ * Route::get('/links', 'Back\LinksController@showLinks');
+ * Route::get('/weather', 'Back\WeatherController@showWeather');
+ * 
+ * 
+ * 
+ * 
+ */
