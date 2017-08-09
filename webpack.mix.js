@@ -27,5 +27,6 @@ mix.styles([
 mix.scripts([
     'resources/assets/app/morris/morris-data.js',
     'resources/assets/app/morris/morris.js',
-    'resources/assets/app/morris/raphael.min.js'
+    'resources/assets/app/morris/raphael.min.js',
+    'resources/assets/app/weather/weather.js'
 ], 'public/js/back.js');

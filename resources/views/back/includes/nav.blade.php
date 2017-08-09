@@ -31,37 +31,7 @@
                         <a href="{{ url('/dashboard') }}"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="{{ url('/charts') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/tables') }}"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/forms') }}"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/bootstrapelements') }}"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/bootstrapgrid') }}"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
-                    <li>
                         <a href="{{ url('/blankpage') }}"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/users') }}"><i class="fa fa-fw fa-file"></i> Users</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/roles') }}"><i class="fa fa-fw fa-file"></i> Roles</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/permissions') }}"><i class="fa fa-fw fa-file"></i> Permissions</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/urls') }}"><i class="fa fa-fw fa-file"></i> URLs</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/links') }}"><i class="fa fa-fw fa-file"></i> Links</a>
                     </li>
                     <li>
                         <a href="{{ url('/logs') }}"><i class="fa fa-fw fa-file"></i> Logs</a>
