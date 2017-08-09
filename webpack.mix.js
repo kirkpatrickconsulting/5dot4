@@ -18,6 +18,14 @@ mix.styles([
     'resources/assets/app/modern-business/modern-business.css'
 ], 'public/css/front.css');
 
+mix.styles([
+    'resources/assets/app/sb-admin/sb-admin.css',
+    'resources/assets/app/morris/morris.css',
+    'resources/assets/app/weather/weather.css'
+], 'public/css/back.css');
+
 mix.scripts([
-    'resources/assets/app/modern-business/modern-business-carousel.js'
-], 'public/js/front.js');
+    'resources/assets/app/morris/morris-data.js',
+    'resources/assets/app/morris/morris.js',
+    'resources/assets/app/morris/raphael.min.js'
+], 'public/js/back.js');

@@ -13,6 +13,8 @@
 
 Route::get('/', 'Front\FrontController@showFront');
 
+Route::get('/dashboard', 'Back\DashboardController@showDashboard');
+
 /*
  * 
  * Route::get('/', function () {
@@ -34,7 +36,7 @@ Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
  * 
  * 
  * 
- * Route::get('/dashboard', 'Back\DashboardController@showDashboard');
+ * 
  * 
  * Route::get('/blankpage', 'Back\BlankpageController@showBlankpage');
  * Route::get('/links', 'Back\LinksController@showLinks');
