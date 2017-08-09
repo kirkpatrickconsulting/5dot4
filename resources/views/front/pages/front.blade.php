@@ -179,12 +179,6 @@
     
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    <script src="{{ asset('js/front.js') }}"></script>
 
 @stop
