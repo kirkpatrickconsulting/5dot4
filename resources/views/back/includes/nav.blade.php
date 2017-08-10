@@ -42,6 +42,9 @@
                     <li>
                         <a href="{{ url('/users') }}"><i class="fa fa-fw fa-user"></i> Users</a>
                     </li>
+                    <li>
+                        <a href="{{ url('/urls') }}"><i class="fa fa-fw fa-fax"></i> URLs</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

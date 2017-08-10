@@ -23,6 +23,7 @@ Route::get('/weather', 'Back\WeatherController@showWeather');
 Route::get('/blankpage', 'Back\BlankpageController@showBlankpage');
 
 Route::resource('users', 'UserController');
+Route::resource('urls', 'UrlController');
 
 /*
  * 
@@ -38,7 +39,7 @@ Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 /*
  *
- * Route::get('/contact', 'Front\ContactController@showContact');
+ *
  * 
  * 
  * 

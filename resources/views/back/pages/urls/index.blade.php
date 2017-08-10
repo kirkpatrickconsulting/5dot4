@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Users
+                    URLs
                 </h1>
                 <ol class="breadcrumb">
                     <li>
@@ -35,23 +35,27 @@
         
         <div class="row">
             <div class="col-lg-12">
-                <p>{{ link_to_route('users.create', 'Add new user') }}</p>
+                <p>{{ link_to_route('urls.create', 'Add new URL') }}</p>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
-                                <th>Email</th>
+                                <th>Name</th>
+                                <th>Link</th>
+                                <th>Panel</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($users as $user)
+                            @foreach ($urls as $url)
                                 <tr>
-                                <td>{{ $user->email }}</td>
-                                <td>{{ link_to_route('users.edit', 'Edit', array($user->id), array('class' => 'btn btn-info')) }}</td>
+                                <td>{{ $url->name }}</td>
+                                <td>{{ $url->link }}</td>
+                                <td>{{ $url->panel }}</td>
+                                <td>{{ link_to_route('urls.edit', 'Edit', array($url->id), array('class' => 'btn btn-info')) }}</td>
                                 <td>
-                                    {{ Form::open(array('method' => 'DELETE', 'route' => array('users.destroy', $user->id))) }}                       
+                                    {{ Form::open(array('method' => 'DELETE', 'route' => array('urls.destroy', $url->id))) }}
                                         {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
                                     {{ Form::close() }}
                                 </td>
@@ -75,6 +79,6 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/front.js') }}"></script>
+<script src="{{ asset('js/back.js') }}"></script>
 
 @stop
