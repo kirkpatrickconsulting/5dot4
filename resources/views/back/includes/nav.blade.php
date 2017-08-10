@@ -39,6 +39,9 @@
                     <li>
                         <a href="{{ url('/weather') }}"><i class="fa fa-fw fa-file"></i> Weather</a>
                     </li>
+                    <li>
+                        <a href="{{ url('/users') }}"><i class="fa fa-fw fa-user"></i> Users</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

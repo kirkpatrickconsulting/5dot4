@@ -15,10 +15,14 @@ Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/', 'Front\FrontController@showFront');
+Route::get('/contact', 'Front\ContactController@showContact');
+Route::post('/contact', 'MailController@mailContact');
 
 Route::get('/dashboard', 'Back\DashboardController@showDashboard');
 Route::get('/weather', 'Back\WeatherController@showWeather');
 Route::get('/blankpage', 'Back\BlankpageController@showBlankpage');
+
+Route::resource('users', 'UserController');
 
 /*
  * 
