@@ -43,6 +43,14 @@
 
     <!-- Page Content -->
     <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-12">
+                @if(Session::has('message'))
+                <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                @endif
+            </div>
+        </div>
 
         <!-- Marketing Icons Section -->
         <div class="row">

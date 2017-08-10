@@ -25,8 +25,13 @@ mix.styles([
 ], 'public/css/back.css');
 
 mix.scripts([
+    'resources/assets/app/modern-business/modern-business-carousel.js'
+], 'public/js/front.js');
+
+mix.scripts([
     'resources/assets/app/morris/morris-data.js',
     'resources/assets/app/morris/morris.js',
     'resources/assets/app/morris/raphael.min.js',
-    'resources/assets/app/weather/weather.js'
+    'resources/assets/app/weather/weather.js',
+    'resources/assets/app/weather/jquery.simpleWeather.js'
 ], 'public/js/back.js');

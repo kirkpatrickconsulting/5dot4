@@ -23,11 +23,19 @@
                 </div>
             </div>
             <!-- /.row -->
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    @if(Session::has('message'))
+                    <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                    @endif
+                </div>
+            </div>
 
             <div class="row">
- 
-            <div id="weather"></div>
-                
+                <div class="col-lg-12">
+                    <div id="weather"></div>
+                </div>
             </div>
             
         </div>
