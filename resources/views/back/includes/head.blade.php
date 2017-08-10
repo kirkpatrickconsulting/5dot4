@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin</title>
+    <title>Dashboard</title>
 
 
         <!-- Styles -->
