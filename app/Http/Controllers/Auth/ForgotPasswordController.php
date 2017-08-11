@@ -6,8 +6,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
 
+
 /**
  * Class ForgotPasswordController
+ *
  * @package App\Http\Controllers\Auth
  */
 class ForgotPasswordController extends Controller
@@ -25,21 +27,18 @@ class ForgotPasswordController extends Controller
 
     use SendsPasswordResetEmails;
 
+
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * ForgotPasswordController constructor.
      */
     public function __construct()
     {
         $this->middleware('guest');
     }
-    
+
+
     /**
-     * Validate the email for the given request.
-     *
-     * @param \Illuminate\Http\Request  $request
-     * @return void
+     * @param Request $request
      */
     protected function validateEmail(Request $request)
     {

@@ -4,26 +4,26 @@ namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
 
+
 /**
  * Class WeatherController
+ *
  * @package App\Http\Controllers\Back
  */
 class WeatherController extends Controller
 {
-     /**
-     * Create a new controller instance.
-     *
-     * @return void
+
+    /**
+     * WeatherController constructor.
      */
     public function __construct()
     {
         $this->middleware('auth');
     }
-    
+
+
     /**
-     * Show the Tables page.
-     *
-     * @return Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showWeather()
     {

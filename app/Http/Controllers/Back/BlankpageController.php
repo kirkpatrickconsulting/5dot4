@@ -6,27 +6,29 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use GeoIP;
 
+
 /**
  * Class BlankpageController
+ *
  * @package App\Http\Controllers\Back
  */
 class BlankpageController extends Controller
 {
-     /**
-     * Create a new controller instance.
+
+    /**
+     * BlankpageController constructor.
      *
-     * @return void
+     * @param Request $request
      */
     public function __construct(Request $request)
     {
         $this->middleware('auth');
         $this->request = $request;
     }
-    
+
+
     /**
-     * Show the Blankpage page.
-     *
-     * @return Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showBlankpage()
     {

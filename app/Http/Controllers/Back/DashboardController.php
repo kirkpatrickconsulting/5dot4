@@ -4,26 +4,26 @@ namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
 
+
 /**
  * Class DashboardController
+ *
  * @package App\Http\Controllers\Back
  */
 class DashboardController extends Controller
 {
-     /**
-     * Create a new controller instance.
-     *
-     * @return void
+
+    /**
+     * DashboardController constructor.
      */
     public function __construct()
     {
         $this->middleware('auth');
     }
-    
+
+
     /**
-     * Show the Dashboard page.
-     *
-     * @return Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function showDashboard()
     {
