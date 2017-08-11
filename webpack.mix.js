@@ -15,13 +15,15 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
 
 mix.styles([
-    'resources/assets/app/modern-business/modern-business.css'
+    'resources/assets/app/modern-business/modern-business.css',
+    'resources/assets/app/prismjs/prism.css'
 ], 'public/css/front.css');
 
 mix.styles([
     'resources/assets/app/sb-admin/sb-admin.css',
     'resources/assets/app/morris/morris.css',
-    'resources/assets/app/weather/weather.css'
+    'resources/assets/app/weather/weather.css',
+    'resources/assets/app/prismjs/prism.css'
 ], 'public/css/back.css');
 
 mix.scripts([
@@ -33,5 +35,6 @@ mix.scripts([
     'resources/assets/app/morris/morris.js',
     'resources/assets/app/morris/raphael.min.js',
     'resources/assets/app/weather/weather.js',
-    'resources/assets/app/weather/jquery.simpleWeather.js'
+    'resources/assets/app/weather/jquery.simpleWeather.js',
+    'resources/assets/app/prismjs/prism.js'
 ], 'public/js/back.js');

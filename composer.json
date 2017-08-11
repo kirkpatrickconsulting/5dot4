@@ -10,6 +10,7 @@
         "barryvdh/laravel-debugbar": "^2.4",
         "barryvdh/laravel-ide-helper": "^2.4",
         "bestmomo/nice-artisan": "^1.0",
+        "fabpot/goutte": "^3.2",
         "geoip2/geoip2": "^2.6",
         "greggilbert/recaptcha": "dev-master",
         "guzzlehttp/guzzle": "^6.3",
