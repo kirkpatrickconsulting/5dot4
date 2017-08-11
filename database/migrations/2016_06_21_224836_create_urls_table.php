@@ -3,12 +3,14 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * Class CreateUrlsTable
+ */
 class CreateUrlsTable extends Migration
 {
+
     /**
-     * Run the migrations.
      *
-     * @return void
      */
     public function up()
     {
@@ -21,10 +23,9 @@ class CreateUrlsTable extends Migration
         });
     }
 
+
     /**
-     * Reverse the migrations.
      *
-     * @return void
      */
     public function down()
     {

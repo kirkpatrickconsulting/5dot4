@@ -3,12 +3,15 @@
 use Illuminate\Database\Seeder;
 use App\User;
 
+
+/**
+ * Class UsersTableSeeder
+ */
 class UsersTableSeeder extends Seeder
 {
+
     /**
-     * Run the database seeds.
      *
-     * @return void
      */
     public function run()
     {
