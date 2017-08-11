@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
 
+/**
+ * Class DashboardController
+ * @package App\Http\Controllers\Back
+ */
 class DashboardController extends Controller
 {
      /**

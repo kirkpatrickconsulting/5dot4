@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
 
+/**
+ * Class WeatherController
+ * @package App\Http\Controllers\Back
+ */
 class WeatherController extends Controller
 {
      /**

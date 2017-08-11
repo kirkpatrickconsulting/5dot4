@@ -6,14 +6,28 @@ use Mail;
 use Session;
 use Illuminate\Http\Request;
 
+/**
+ * Class MailController
+ * @package App\Http\Controllers
+ */
 class MailController extends Controller
 {
+    /**
+     * @var Request
+     */
     protected $request;
 
+    /**
+     * MailController constructor.
+     * @param Request $request
+     */
     public function __construct(Request $request) {
         $this->request = $request;
     }
-    
+
+    /**
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function mailContact()
     {    
         $this->validate($this->request, [

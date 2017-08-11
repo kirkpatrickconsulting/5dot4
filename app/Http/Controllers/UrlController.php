@@ -7,11 +7,21 @@ use Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
+/**
+ * Class UrlController
+ * @package App\Http\Controllers
+ */
 class UrlController extends Controller
 {
-    // TODO move to back folder
+    /**
+     * @var Request
+     */
     protected $request;
 
+    /**
+     * UrlController constructor.
+     * @param Request $request
+     */
     public function __construct(Request $request) {
         $this->middleware('auth');
         $this->request = $request;

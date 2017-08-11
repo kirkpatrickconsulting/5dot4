@@ -4,17 +4,24 @@ namespace App\Listeners;
 use Illuminate\Auth\Events\Login;
 use Log;
 
+
+/**
+ * Class LogSuccessfulLogin
+ *
+ * @package App\Listeners
+ */
 class LogSuccessfulLogin
 {
+
+    /**
+     * LogSuccessfulLogin constructor.
+     */
     public function __construct() {
 
     }
 
     /**
-     * Handle the event.
-     *
-     * @param  Login  $event
-     * @return void
+     * @param Login $event
      */
     public function handle(Login $event)
     {

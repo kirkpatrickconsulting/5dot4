@@ -5,10 +5,17 @@ namespace App\Events;
 use App\User;
 use Illuminate\Queue\SerializesModels;
 
+/**
+ * Class UserCreated
+ * @package App\Events
+ */
 class UserCreated extends Event
 {
     use SerializesModels;
 
+    /**
+     * @var User
+     */
     public $user;
 
     /**

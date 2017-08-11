@@ -9,19 +9,34 @@ use Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
+
+/**
+ * Class UserController
+ *
+ * @package App\Http\Controllers
+ */
 class UserController extends Controller
 {
+
+    /**
+     * @var Request
+     */
     protected $request;
 
+
+    /**
+     * UserController constructor.
+     *
+     * @param Request $request
+     */
     public function __construct(Request $request) {
         $this->middleware('auth');
         $this->request = $request;
     }
-    
+
+
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
@@ -30,20 +45,18 @@ class UserController extends Controller
 
     }
 
+
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
         return view('back.pages.users.create');
     }
 
+
     /**
-     * Store a newly created resource in storage.
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store()
     {
@@ -77,11 +90,11 @@ class UserController extends Controller
         return Redirect::route('users.index');
     }
 
+
     /**
-     * Display the specified resource.
+     * @param $id
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
      */
     public function show($id)
     {
@@ -93,11 +106,11 @@ class UserController extends Controller
         return view('back.pages.users.show', compact('user'));
     }
 
+
     /**
-     * Show the form for editing the specified resource.
+     * @param $id
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
      */
     public function edit($id)
     {
@@ -109,11 +122,11 @@ class UserController extends Controller
         return view('back.pages.users.edit', compact('user'));
     }
 
+
     /**
-     * Update the specified resource in storage.
+     * @param $id
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update($id)
     {
@@ -144,11 +157,11 @@ class UserController extends Controller
         // return Redirect::route('users.index');
     }
 
+
     /**
-     * Remove the specified resource from storage.
+     * @param $id
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {

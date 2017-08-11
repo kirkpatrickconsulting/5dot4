@@ -5,11 +5,17 @@ namespace App\Listeners;
 use Log;
 use App\Events\UserCreated;
 
+
+/**
+ * Class LogUserCreated
+ *
+ * @package App\Listeners
+ */
 class LogUserCreated
 {
+
     /**
-     * Create the event listener.
-     *
+     * LogUserCreated constructor.
      */
     public function __construct()
     {
@@ -17,10 +23,7 @@ class LogUserCreated
     }
 
     /**
-     * Handle the event.
-     *
-     * @param  UserCreated  $event
-     * @return void
+     * @param UserCreated $event
      */
     public function handle(UserCreated $event)
     {

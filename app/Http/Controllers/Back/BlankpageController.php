@@ -6,6 +6,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use GeoIP;
 
+/**
+ * Class BlankpageController
+ * @package App\Http\Controllers\Back
+ */
 class BlankpageController extends Controller
 {
      /**

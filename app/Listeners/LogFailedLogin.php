@@ -4,17 +4,25 @@ namespace App\Listeners;
 use Illuminate\Auth\Events\Failed;
 use Log;
 
+
+/**
+ * Class LogFailedLogin
+ *
+ * @package App\Listeners
+ */
 class LogFailedLogin
 {
+
+    /**
+     * LogFailedLogin constructor.
+     */
     public function __construct() {
 
     }
 
+
     /**
-     * Handle the event.
-     *
-     * @param  Failed  $event
-     * @return void
+     * @param Failed $event
      */
     public function handle(Failed $event)
     {

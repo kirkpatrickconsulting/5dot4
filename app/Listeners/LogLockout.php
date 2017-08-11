@@ -4,17 +4,24 @@ namespace App\Listeners;
 use Illuminate\Auth\Events\Lockout;
 use Log;
 
+
+/**
+ * Class LogLockout
+ *
+ * @package App\Listeners
+ */
 class LogLockout
 {
+
+    /**
+     * LogLockout constructor.
+     */
     public function __construct() {
 
     }
 
     /**
-     * Handle the event.
-     *
-     * @param  Lockout  $event
-     * @return void
+     * @param Lockout $event
      */
     public function handle(Lockout $event)
     {

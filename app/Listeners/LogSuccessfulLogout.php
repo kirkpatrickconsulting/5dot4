@@ -4,17 +4,24 @@ namespace App\Listeners;
 use Illuminate\Auth\Events\Logout;
 use Log;
 
+
+/**
+ * Class LogSuccessfulLogout
+ *
+ * @package App\Listeners
+ */
 class LogSuccessfulLogout
 {
+
+    /**
+     * LogSuccessfulLogout constructor.
+     */
     public function __construct() {
 
     }
-    
+
     /**
-     * Handle the event.
-     *
-     * @param  Logout  $event
-     * @return void
+     * @param Logout $event
      */
     public function handle(Logout $event)
     {
