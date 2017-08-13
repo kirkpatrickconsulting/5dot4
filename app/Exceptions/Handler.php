@@ -4,12 +4,8 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use GrahamCampbell\Exceptions\ExceptionHandler as ExceptionHandler;
 
-/**
- * Class Handler
- * @package App\Exceptions
- */
 class Handler extends ExceptionHandler
 {
     /**
@@ -63,7 +59,6 @@ class Handler extends ExceptionHandler
         if ($request->expectsJson()) {
             return response()->json(['error' => 'Unauthenticated.'], 401);
         }
-
         return redirect()->guest(route('login'));
     }
 }

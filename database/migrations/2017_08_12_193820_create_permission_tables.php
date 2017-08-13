@@ -3,14 +3,12 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-/**
- * Class CreatePermissionTables
- */
 class CreatePermissionTables extends Migration
 {
-
     /**
+     * Run the migrations.
      *
+     * @return void
      */
     public function up()
     {
@@ -81,9 +79,10 @@ class CreatePermissionTables extends Migration
         });
     }
 
-
     /**
+     * Reverse the migrations.
      *
+     * @return void
      */
     public function down()
     {
