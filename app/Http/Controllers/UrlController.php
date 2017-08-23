@@ -56,14 +56,16 @@ class UrlController extends Controller
     public function store()
     {
         $this->validate($this->request, [
-            'name' => 'required|max:255|min:3',
-            'link' => 'required|max:255|min:4|url',
-            'panel' => 'required|max:255|min:4',
+            'title' => 'required|max:255|min:3',
+            'url' => 'required|max:255|min:4|url',
+            'description' => 'required|max:255|min:4',
+            'panel' => 'required|max:2|min:1',
         ]);
 
         Url::create([
-            'name' => $this->request->name,
-            'link' => $this->request->link,
+            'title' => $this->request->title,
+            'url' => $this->request->url,
+            'description' => $this->request->description,
             'panel' => $this->request->panel,
         ]);
 
@@ -112,16 +114,17 @@ class UrlController extends Controller
     public function update($id)
     {
         $this->validate($this->request, [
-            'name' => 'required|max:255|min:3',
-            'link' => 'required|max:255|min:4|url',
-            'panel' => 'required|max:255|min:4',
+            'title' => 'required|max:255|min:3',
+            'url' => 'required|max:255|min:4|url',
+            'description' => 'required|max:255|min:4',
+            'panel' => 'required|max:2|min:1',
         ]);
 
         $url = Url::find($id);
-        $url->slug = null;
         $url->update([
-            'name' => $this->request->name,
-            'link' => $this->request->link,
+            'title' => $this->request->title,
+            'url' => $this->request->url,
+            'description' => $this->request->description,
             'panel' => $this->request->panel,
         ]);
 

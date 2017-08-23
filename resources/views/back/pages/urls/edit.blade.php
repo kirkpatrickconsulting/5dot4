@@ -32,29 +32,43 @@
                 {{ Form::model($url, array('method' => 'PATCH', 'route' => array('urls.update', $url->id))) }}
                     {{ csrf_field() }}
 
-                    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                        <label for="name" class="control-label">Name</label>
+                    <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
+                        <label for="title" class="control-label">Title</label>
 
                         <div class="">
-                            {{ Form::text('name', null, ['class' => 'form-control']) }}
+                            {{ Form::text('title', null, ['class' => 'form-control']) }}
 
-                            @if ($errors->has('name'))
+                            @if ($errors->has('title'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('name') }}</strong>
+                                    <strong>{{ $errors->first('title') }}</strong>
                                 </span>
                             @endif
                         </div>
                     </div>
 
-                    <div class="form-group{{ $errors->has('link') ? ' has-error' : '' }}">
-                        <label for="link" class="control-label">Link</label>
+                    <div class="form-group{{ $errors->has('url') ? ' has-error' : '' }}">
+                        <label for="url" class="control-label">URL</label>
 
                         <div class="">
-                            {{ Form::text('link', null, ['class' => 'form-control']) }}
+                            {{ Form::text('url', null, ['class' => 'form-control']) }}
 
-                            @if ($errors->has('link'))
+                            @if ($errors->has('url'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('link') }}</strong>
+                                    <strong>{{ $errors->first('url') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                    </div>
+
+                    <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
+                        <label for="description" class="control-label">Description</label>
+
+                        <div class="">
+                            {{ Form::text('description', null, ['class' => 'form-control']) }}
+
+                            @if ($errors->has('description'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('description') }}</strong>
                                 </span>
                             @endif
                         </div>

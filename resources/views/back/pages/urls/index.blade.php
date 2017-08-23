@@ -40,8 +40,9 @@
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Link</th>
+                                <th>Title</th>
+                                <th>URL</th>
+                                <th>Description</th>
                                 <th>Panel</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
@@ -50,8 +51,9 @@
                         <tbody>
                             @foreach ($urls as $url)
                                 <tr>
-                                <td>{{ $url->name }}</td>
-                                <td>{{ $url->link }}</td>
+                                <td>{{ $url->title }}</td>
+                                <td>{{ $url->url }}</td>
+                                <td>{{ $url->description }}</td>
                                 <td>{{ $url->panel }}</td>
                                 <td>{{ link_to_route('urls.edit', 'Edit', array($url->id), array('class' => 'btn btn-info')) }}</td>
                                 <td>

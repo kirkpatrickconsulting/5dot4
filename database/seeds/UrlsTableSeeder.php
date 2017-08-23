@@ -15,27 +15,31 @@ class UrlsTableSeeder extends Seeder
     public function run()
     {
         Url::create([
-            'name' => 'CNN',
-            'link' => 'http://www.cnn.com',
-            'panel' => 'test',
+            'title' => 'CNN',
+            'url' => 'http://www.cnn.com',
+            'description' => 'CNN',
+            'panel' => '1',
         ]);
 
         Url::create([
-            'name' => 'ESPN',
-            'link' => 'http://www.espn.com',
-            'panel' => 'test',
+            'title' => 'ESPN',
+            'url' => 'http://www.espn.com',
+            'description' => 'ESPN',
+            'panel' => '1',
         ]);
 
         Url::create([
-            'name' => 'Daily Mail',
-            'link' => 'http://www.dailymail.co.uk',
-            'panel' => 'test',
+            'title' => 'Daily Mail',
+            'url' => 'http://www.dailymail.co.uk',
+            'description' => 'Daily Mail',
+            'panel' => '1',
         ]);
 
         Url::create([
-            'name' => 'Reddit',
-            'link' => 'http://www.reddit.com',
-            'panel' => 'test',
+            'title' => 'Reddit',
+            'url' => 'http://www.reddit.com',
+            'description' => 'Reddit',
+            'panel' => '1',
         ]);
 
     }

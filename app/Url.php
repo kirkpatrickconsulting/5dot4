@@ -17,6 +17,6 @@ class Url extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'link', 'panel'
+        'title', 'url', 'description', 'panel'
     ];
 }
