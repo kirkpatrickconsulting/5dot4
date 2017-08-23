@@ -173,7 +173,6 @@ return [
         Torann\GeoIP\GeoIPServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
-        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
 
         /*
          * Package Service Providers...

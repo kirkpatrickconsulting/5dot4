@@ -63,12 +63,12 @@ class UserController extends Controller
         $this->validate($this->request, [
             'name' => 'required|max:255|min:4',
             'email' => 'required|max:255|unique:users|email',
-            'address1' => 'max:255|min:3',
-            'address2' => 'max:255|min:3',
-            'city' => 'max:255|min:4',
-            'state' => 'alpha|max:2|min:2',
-            'zip' => 'digits:5',
-            'phone' => 'digits:10',
+            'address1' => 'nullable|max:255|min:3',
+            'address2' => 'nullable|max:255|min:3',
+            'city' => 'nullable|max:255|min:4',
+            'state' => 'nullable|alpha|max:2|min:2',
+            'zip' => 'nullable|digits:5',
+            'phone' => 'nullable|digits:10',
             'password' => 'required|min:7|confirmed',
         ]);
 
@@ -133,12 +133,12 @@ class UserController extends Controller
         $this->validate($this->request, [
             'name' => 'required|max:255|min:4',
             'email' => 'required|email|unique:users,email,'.$id,
-            'address1' => 'max:255|min:3',
-            'address2' => 'max:255|min:3',
-            'city' => 'max:255|min:4',
-            'state' => 'alpha|max:2|min:2',
-            'zip' => 'digits:5',
-            'phone' => 'digits:10',
+            'address1' => 'nullable|max:255|min:3',
+            'address2' => 'nullable|max:255|min:3',
+            'city' => 'nullable|max:255|min:4',
+            'state' => 'nullable|alpha|max:2|min:2',
+            'zip' => 'nullable|digits:5',
+            'phone' => 'nullable|digits:10',
         ]);
 
         $user = User::find($id);
