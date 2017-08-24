@@ -15,6 +15,7 @@ class UrlsTableSeeder extends Seeder
     public function run()
     {
         Url::create([
+            'user_id' => '1',
             'title' => 'CNN',
             'url' => 'http://www.cnn.com',
             'description' => 'CNN',
@@ -22,6 +23,7 @@ class UrlsTableSeeder extends Seeder
         ]);
 
         Url::create([
+            'user_id' => '1',
             'title' => 'ESPN',
             'url' => 'http://www.espn.com',
             'description' => 'ESPN',
@@ -29,6 +31,7 @@ class UrlsTableSeeder extends Seeder
         ]);
 
         Url::create([
+            'user_id' => '1',
             'title' => 'Daily Mail',
             'url' => 'http://www.dailymail.co.uk',
             'description' => 'Daily Mail',
@@ -36,6 +39,7 @@ class UrlsTableSeeder extends Seeder
         ]);
 
         Url::create([
+            'user_id' => '1',
             'title' => 'Reddit',
             'url' => 'http://www.reddit.com',
             'description' => 'Reddit',
