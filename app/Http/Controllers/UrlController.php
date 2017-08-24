@@ -58,8 +58,8 @@ class UrlController extends Controller
         $this->validate($this->request, [
             'title' => 'required|max:255|min:3',
             'url' => 'required|max:255|min:4|url',
-            'description' => 'required|max:255|min:4',
-            'panel' => 'required|max:2|min:1',
+            'description' => 'nullable|max:255|min:4',
+            'panel' => 'nullable|max:2|min:1',
         ]);
 
         Url::create([
@@ -116,8 +116,8 @@ class UrlController extends Controller
         $this->validate($this->request, [
             'title' => 'required|max:255|min:3',
             'url' => 'required|max:255|min:4|url',
-            'description' => 'required|max:255|min:4',
-            'panel' => 'required|max:2|min:1',
+            'description' => 'nullable|max:255|min:4',
+            'panel' => 'nullable|max:2|min:1',
         ]);
 
         $url = Url::find($id);

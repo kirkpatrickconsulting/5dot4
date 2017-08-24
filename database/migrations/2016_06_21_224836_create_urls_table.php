@@ -18,8 +18,8 @@ class CreateUrlsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('url');
-            $table->string('description');
-            $table->string('panel');
+            $table->string('description')->nullable();
+            $table->string('panel')->nullable();
             $table->timestamps();
         });
     }
